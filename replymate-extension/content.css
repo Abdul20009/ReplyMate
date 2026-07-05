@@ -1,0 +1,46 @@
+#replymate-trigger {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  z-index: 9999;
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#replymate-trigger:hover {
+  background: #1ebd5a;
+}
+
+#replymate-suggestions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  flex-wrap: wrap;
+  background: #f0f2f5;
+  border-top: 1px solid #d1d7db;
+}
+
+.replymate-chip {
+  background: white;
+  border: 1px solid #d1d7db;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.replymate-chip:hover {
+  background: #e9edef;
+  border-color: #25d366;
+}
