@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>ReplyMate</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ReplyMate</h1>
+
+    <div id="loginView">
+      <input type="email" id="emailInput" placeholder="Email" />
+      <input type="password" id="passwordInput" placeholder="Password" />
+      <button id="loginBtn">Log In</button>
+      <button id="signupBtn" class="secondary">Sign Up Instead</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+
+    <div id="loggedInView" class="hidden">
+      <p class="status">✅ Logged in as <span id="userEmail"></span></p>
+      <p class="hint">Open a WhatsApp Web chat to start getting suggestions.</p>
+      <button id="logoutBtn" class="secondary">Log Out</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
