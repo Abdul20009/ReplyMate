@@ -7,6 +7,8 @@ const connectDB = require("./config/db");
 const authRoutes = require("./routes/auth_routes");
 const contactRoutes = require("./routes/contact_routes");
 const suggestionRoutes = require("./routes/suggestion_routes");
+const userRoutes = require("./routes/user_routes");
+
 
 connectDB();
 
@@ -24,6 +26,7 @@ app.get("/api/health", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/suggest", suggestionRoutes);
+app.use("/api/users", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
