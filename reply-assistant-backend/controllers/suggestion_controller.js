@@ -23,7 +23,7 @@ const buildPrompt = (user, contact, messages) => {
   const userContext = userContextLines.length
     ? userContextLines.join("\n")
     : "No extra context provided about the user.";
-
+  
  const sharedInstructions = `Generate exactly 3 short reply options as a JSON array of strings, nothing else.
 No preamble, no markdown, no explanation — just a raw JSON array like ["reply one", "reply two", "reply three"].
 Keep each option SHORT and natural, like LinkedIn's quick-reply suggestions (a few words to one short sentence, not a paragraph) — the user should be able to tap one and send it as-is.
