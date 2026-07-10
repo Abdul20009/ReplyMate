@@ -7,7 +7,7 @@ const contactSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    platform: {
+    platform: {   
       type: String,
       enum: ["whatsapp", "instagram"],
       required: true,
