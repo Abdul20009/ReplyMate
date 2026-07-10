@@ -4,7 +4,7 @@ const Contact = require("../models/contact_model");
 // @desc    Create a new contact profile
 // @access  Private
 const createContact = async (req, res) => {
-  try {
+  try {  
     const { platform, contactName, profileNotes, tonePreference } = req.body;
 
     // 1. Validate input
